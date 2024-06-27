@@ -32,6 +32,10 @@ public class AllTests {
     // Generate a random 8-digit number and store it in the password variable
     String password = faker.number().digits(8);
 
+    // User data for an employee - used for testing purposes
+    String employeeEmail = "amy.keita@uranus.com";
+    String employeePassword = "L@guna546";
+
     // This method will be run before each test method to set up the test environment
     @Before
     public void setup() {
@@ -312,5 +316,46 @@ public class AllTests {
     @Then("Login popup appears")
     public void login_popup_appears() {
         WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".btn-outline-secondary")));
+    }
+
+    // When step: Employee logs in
+    @When("Employee logs in")
+    public void employee_logs_in() {
+        // Wait for the login button to be clickable and then click it
+        WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".btn-outline-secondary")));
+        loginButton.click();
+
+        // Wait for the email and password fields to be clickable and then input them
+        WebElement emailField = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("app-header #signUp app-login-page .auth-form #loginEmail")));
+        emailField.sendKeys(employeeEmail);
+        WebElement passwordField = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("app-header #signUp app-login-page .auth-form #loginPassword")));
+        passwordField.sendKeys(employeePassword);
+
+        // Wait for the login submit button to be clickable and then click it
+        WebElement loginSubmitButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("app-header #signUp app-login-page .auth-form button")));
+        loginSubmitButton.click();
+    }
+
+    // When step: Admin panel Resources tab is selected
+    @When("Admin panel Resources tab is selected")
+    public void admin_panel_resources_tab_is_selected() {
+        // Wait for the message toast cross button to be clickable and then click it
+        WebElement messageToastCrossButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".p-toast-icon-close")));
+        messageToastCrossButton.click();
+
+        // Wait for the admin module to be clickable and then click it
+        WebElement adminModule = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div #collapsibleNavId ul li:nth-child(8) a")));
+        adminModule.click();
+
+        // Wait for the resources tab to be clickable and then click it
+        WebElement resourcesTab = wait.until(ExpectedConditions.elementToBeClickable(By.id("resources-tab")));
+        resourcesTab.click();
+    }
+
+    // Then step: Admin-uploaded files are visible
+    @Then("Admin-uploaded files are visible")
+    public void admin_uploaded_files_are_visible() {
+        WebElement prompt = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("h6.secondary-txt")));
+        Assert.assertEquals(prompt.getText(), "Upload New File with Max file size 50 MB");
     }
 }

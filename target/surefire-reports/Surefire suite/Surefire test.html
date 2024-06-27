@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 26 21:32:44 PDT 2024</td>
+<td>Started on:</td><td>Thu Jun 27 14:06:14 PDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>66 seconds (66702 ms)</td>
+<tr><td>Total time:</td><td>172 seconds (172575 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,85 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin approves a new user", "All Tests"</td>
+<td><div><pre>java.lang.AssertionError: expected [alfred.grimes@hotmail.com] but found [lane.lemke@hotmail.com]
+	at stepDefinitions.AllTests.admin_approves_the_new_user(AllTests.java:176)
+	at ✽.Admin approves the first new user(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:15)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1843794118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1843794118'><pre>java.lang.AssertionError: expected [alfred.grimes@hotmail.com] but found [lane.lemke@hotmail.com]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitions.AllTests.admin_approves_the_new_user(AllTests.java:176)
+	at ✽.Admin approves the first new user(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:15)
+</pre></div></td>
+<td>6</td>
+<td>cuccumbersOptions.TestNGRunner@61322f9d</td></tr>
+<tr>
+<td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Employee views admin-uploaded file", "All Tests"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: div #collapsibleNavId ul li:nth-child(8) a (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53847/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab8c5f8ea615520e76f7e3843bd5e8ac
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepDefinitions.AllTests.admin_panel_resources_tab_is_selected(AllTests.java:347)
+	at ✽.Admin panel Resources tab is selected(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:53)
+</pre></div><a href='#' onClick='toggleBox("stack-trace692731690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace692731690'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: div #collapsibleNavId ul li:nth-child(8) a (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53847/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab8c5f8ea615520e76f7e3843bd5e8ac
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepDefinitions.AllTests.admin_panel_resources_tab_is_selected(AllTests.java:347)
+	at ✽.Admin panel Resources tab is selected(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:53)
+</pre></div></td>
+<td>36</td>
+<td>cuccumbersOptions.TestNGRunner@61322f9d</td></tr>
+<tr>
+<td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin performs role change", "All Tests"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: #pr_id_5-table &gt; tbody:nth-child(2) &gt; tr:nth-child(3) &gt; td:nth-child(6) &gt; div:nth-child(1) &gt; button:nth-child(1) (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53714/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e4535181c61376213a62dd88750ca4bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepDefinitions.AllTests.role_is_edited(AllTests.java:287)
+	at ✽.Role is edited(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:37)
+</pre></div><a href='#' onClick='toggleBox("stack-trace908802124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace908802124'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: #pr_id_5-table &gt; tbody:nth-child(2) &gt; tr:nth-child(3) &gt; td:nth-child(6) &gt; div:nth-child(1) &gt; button:nth-child(1) (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53714/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e4535181c61376213a62dd88750ca4bf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepDefinitions.AllTests.role_is_edited(AllTests.java:287)
+	at ✽.Role is edited(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:37)
+</pre></div></td>
+<td>36</td>
+<td>cuccumbersOptions.TestNGRunner@61322f9d</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,35 +155,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User without account attempts to use decryption", "All Tests"</td>
-<td></td>
-<td>3</td>
-<td>cuccumbersOptions.TestNGRunner@710f4dc7</td></tr>
-<tr>
-<td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User performs role change", "All Tests"</td>
+<td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User views admin-uploaded file", "All Tests"</td>
 <td></td>
 <td>35</td>
-<td>cuccumbersOptions.TestNGRunner@710f4dc7</td></tr>
+<td>cuccumbersOptions.TestNGRunner@61322f9d</td></tr>
 <tr>
 <td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User without account attempts to use encryption", "All Tests"</td>
 <td></td>
 <td>3</td>
-<td>cuccumbersOptions.TestNGRunner@710f4dc7</td></tr>
+<td>cuccumbersOptions.TestNGRunner@61322f9d</td></tr>
 <tr>
-<td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin performs role change", "All Tests"</td>
+<td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User without account attempts to use decryption", "All Tests"</td>
+<td></td>
+<td>3</td>
+<td>cuccumbersOptions.TestNGRunner@61322f9d</td></tr>
+<tr>
+<td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User performs role change", "All Tests"</td>
+<td></td>
+<td>35</td>
+<td>cuccumbersOptions.TestNGRunner@61322f9d</td></tr>
+<tr>
+<td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin views admin-uploaded file", "All Tests"</td>
 <td></td>
 <td>6</td>
-<td>cuccumbersOptions.TestNGRunner@710f4dc7</td></tr>
-<tr>
-<td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin approves a new user", "All Tests"</td>
-<td></td>
-<td>7</td>
-<td>cuccumbersOptions.TestNGRunner@710f4dc7</td></tr>
+<td>cuccumbersOptions.TestNGRunner@61322f9d</td></tr>
 <tr>
 <td title='cuccumbersOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cuccumbersOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check that Sign Up Scenario works successfully", "All Tests"</td>
 <td></td>
-<td>8</td>
-<td>cuccumbersOptions.TestNGRunner@710f4dc7</td></tr>
+<td>7</td>
+<td>cuccumbersOptions.TestNGRunner@61322f9d</td></tr>
 </table><p>
 </body>
 </html>

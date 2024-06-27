@@ -24,9 +24,10 @@ Feature: All Tests
     When User selects decryption
     Then Login popup appears
 
+  # Use employee for this test - employee accounts are always available, ensuring test consistency here
   Scenario: User performs role change
     Given User visits home page
-    When User logs in
+    When Employee logs in
     Then User cannot click admin panel
 
   Scenario: Admin performs role change
@@ -34,3 +35,20 @@ Feature: All Tests
     When Admin logs in
     When Admin goes to edit role
     Then Role is edited
+
+  Scenario: User views admin-uploaded file
+    Given User visits home page
+    When User logs in
+    Then User cannot click admin panel
+
+  Scenario: Admin views admin-uploaded file
+    Given Admin visits home page to log in
+    When Admin logs in
+    When Admin panel Resources tab is selected
+    Then Admin-uploaded files are visible
+
+  Scenario: Employee views admin-uploaded file
+    Given User visits home page
+    When Employee logs in
+    When Admin panel Resources tab is selected
+    Then Admin-uploaded files are visible
