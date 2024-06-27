@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import com.github.javafaker.Faker;
 import java.time.Duration;
+import java.io.File;
 
 // Define the SignUpTest class which contains all the test methods
 public class AllTests {
@@ -35,6 +36,9 @@ public class AllTests {
     // User data for an employee - used for testing purposes
     String employeeEmail = "amy.keita@uranus.com";
     String employeePassword = "L@guna546";
+
+    // AES encryption key
+    String aesKey = "bWpHvpbVDlgkZG/aDNK+1dfNvLHiLkKuRqMPbFIWqR4=";
 
     // This method will be run before each test method to set up the test environment
     @Before
@@ -177,25 +181,25 @@ public class AllTests {
 
         // If the user placeholder text matches the user's email, approve the user
         if (userPlaceHolder.getText().compareTo(email) == 0) {
- 
-                try {
-                    // Wait for the approve button to be clickable
-                    WebElement approveButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("tr:nth-of-type(1) > td:nth-of-type(6) > .align-items-center.d-flex.justify-content-center > .action.approve.p-button.p-component.p-element")));
-                    
-                    // Debug information to check if the button is found and clickable
-                    System.out.println("Approve button is found and is clickable.");
 
-                    // Click the approve button
-                    approveButton.click();
+            try {
+                // Wait for the approve button to be clickable
+                WebElement approveButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("tr:nth-of-type(1) > td:nth-of-type(6) > .align-items-center.d-flex.justify-content-center > .action.approve.p-button.p-component.p-element")));
 
-                    // Logging out seems necessary for changes to go through
-                    WebElement userDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("dropdownId")));
-                    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", userDropdown);
-                    new Select(userDropdown).selectByValue("Logout");
-                } catch (Exception e) {
-                    // Debug information for any exceptions
-                    System.out.println("Exception occurred: " + e.getMessage());
-                }
+                // Debug information to check if the button is found and clickable
+                System.out.println("Approve button is found and is clickable.");
+
+                // Click the approve button
+                approveButton.click();
+
+                // Logging out seems necessary for changes to go through
+                WebElement userDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("dropdownId")));
+                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", userDropdown);
+                new Select(userDropdown).selectByValue("Logout");
+            } catch (Exception e) {
+                // Debug information for any exceptions
+                System.out.println("Exception occurred: " + e.getMessage());
+            }
         }
     }
 
@@ -234,7 +238,7 @@ public class AllTests {
         // Check admin module is not present
         try {
             WebElement adminModule = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div #collapsibleNavId ul li:nth-child(8) a")));
-        } catch(Exception e) {
+        } catch (Exception e) {
             System.out.println("Admin module not present for user");
         }
     }
@@ -357,5 +361,38 @@ public class AllTests {
     public void admin_uploaded_files_are_visible() {
         WebElement prompt = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("h6.secondary-txt")));
         Assert.assertEquals(prompt.getText(), "Upload New File with Max file size 50 MB");
+    }
+
+    // When step: User enters correct key
+    @When("User enters correct key")
+    public void user_enters_correct_key() {
+        WebElement fileUpload = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".p-ripple")));
+        fileUpload.click();
+
+        // Example of file uploads found here: https://www.selenium.dev/documentation/webdriver/elements/file_upload/
+        File uploadFile = new File("README.md");
+        WebElement fileInput = driver.findElement(By.cssSelector("input[type=file]"));
+        fileInput.sendKeys(uploadFile.getAbsolutePath());
+
+        // Encryption algorithm dropdown
+        WebElement algDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.p-3:nth-child(2) > div:nth-child(1) > div:nth-child(1) > select:nth-child(2)")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", algDropdown);
+        new Select(algDropdown).selectByValue("aes");
+    }
+
+    // Then step: User can encrypt file
+    @Then("User can encrypt file")
+    public void user_can_encrypt_file() {
+        // Enter key
+        WebElement keyField = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.p-3:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > textarea:nth-child(1)")));
+        keyField.sendKeys(aesKey);
+
+        // Hit button
+        WebElement encryptButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.p-3:nth-child(2) > div:nth-child(2) > button:nth-child(1)")));
+        encryptButton.click();
+
+        // Check file was encrypted
+        WebElement encrypted = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.title")));
+        Assert.assertEquals(encrypted.getText(), "Encrypted File");
     }
 }

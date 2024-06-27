@@ -41,6 +41,27 @@ Feature: All Tests
     When User logs in
     Then User cannot click admin panel
 
+  Scenario: User encrypts file
+    Given User visits home page
+    When Employee logs in
+    When User selects encryption
+    When User enters correct key
+    Then User can encrypt file
+
+  Scenario: User decrypts file
+    Given User visits home page
+    When Employee logs in
+    When User selects decryption
+    When User enters correct key
+    Then User can decrypt file
+
+  Scenario: User encrypts file with incorrect key
+    Given User visits home page
+    When Employee logs in
+    When User selects encryption
+    When User enters incorrect key
+    Then User cannot encrypt file
+
   Scenario: Admin views admin-uploaded file
     Given Admin visits home page to log in
     When Admin logs in
