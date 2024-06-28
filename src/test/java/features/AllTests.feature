@@ -76,3 +76,8 @@ Feature: All Tests
     When Employee logs in
     When Admin panel Resources tab is selected
     Then Admin-uploaded files are visible
+
+  Scenario: User views admin-uploaded file
+    Given User visits home page
+    When User logs in
+    When User cannot click admin panel

@@ -7,7 +7,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="5 7 8 11"/>
+          <include name="runScenario" invocation-numbers="5 8 11"/>
         </methods>
       </class> <!-- cuccumbersOptions.TestNGRunner -->
     </classes>
