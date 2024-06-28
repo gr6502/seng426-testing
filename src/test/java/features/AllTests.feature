@@ -75,4 +75,4 @@ Feature: All Tests
   Scenario: User views admin-uploaded file
     Given User visits home page
     When User logs in
-    When User cannot click admin panel
+    Then User cannot click admin panel
