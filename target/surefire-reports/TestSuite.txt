@@ -1,39 +1,39 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 246.1 s <<< FAILURE! -- in TestSuite
-cuccumbersOptions.TestNGRunner.runScenario["Admin performs role change", "All Tests"](6) -- Time elapsed: 36.27 s <<< FAILURE!
+Tests run: 12, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 210.2 s <<< FAILURE! -- in TestSuite
+cuccumbersOptions.TestNGRunner.runScenario["Admin performs role change", "All Tests"](6) -- Time elapsed: 37.82 s <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for element to be clickable: By.cssSelector: #pr_id_5-table > tbody:nth-child(2) > tr:nth-child(3) > td:nth-child(6) > div:nth-child(1) > button:nth-child(1) (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50423/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f0594f398778abeec330e79bf827f9f8
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51642}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51642/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 518409c5a75e6b0bc8eb81bc07675569
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at stepDefinitions.AllTests.role_is_edited(AllTests.java:291)
 	at ✽.Role is edited(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:37)
 
-cuccumbersOptions.TestNGRunner.runScenario["User decrypts file", "All Tests"](9) -- Time elapsed: 7.785 s <<< FAILURE!
+cuccumbersOptions.TestNGRunner.runScenario["User decrypts file", "All Tests"](8) -- Time elapsed: 8.230 s <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
 	at org.testng.Assert.assertTrue(Assert.java:67)
 	at stepDefinitions.AllTests.user_can_decrypt_file(AllTests.java:456)
-	at ✽.User can decrypt file(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:58)
+	at ✽.User can decrypt file(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:53)
 
-cuccumbersOptions.TestNGRunner.runScenario["Employee views admin-uploaded file", "All Tests"](12) -- Time elapsed: 35.13 s <<< FAILURE!
+cuccumbersOptions.TestNGRunner.runScenario["Employee views admin-uploaded file", "All Tests"](11) -- Time elapsed: 35.47 s <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for element to be clickable: By.cssSelector: div #collapsibleNavId ul li:nth-child(8) a (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50615}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50615/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4f8381e7eceff20d688f59f95d76c523
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51823}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51823/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9b8c2d19041c7c6ae226ad93bd89d26
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at stepDefinitions.AllTests.admin_panel_resources_tab_is_selected(AllTests.java:351)
-	at ✽.Admin panel Resources tab is selected(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:77)
+	at ✽.Admin panel Resources tab is selected(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:72)
 

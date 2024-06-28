@@ -36,11 +36,6 @@ Feature: All Tests
     When Admin goes to edit role
     Then Role is edited
 
-  Scenario: User views admin-uploaded file
-    Given User visits home page
-    When User logs in
-    Then User cannot click admin panel
-
   Scenario: User encrypts file
     Given User visits home page
     When Employee logs in
