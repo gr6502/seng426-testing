@@ -45,21 +45,24 @@ Feature: All Tests
     Given User visits home page
     When Employee logs in
     When User selects encryption
-    When User enters correct key
+    When User uploads unencrypted file
+    When User enters correct encryption key
     Then User can encrypt file
 
   Scenario: User decrypts file
     Given User visits home page
     When Employee logs in
     When User selects decryption
-    When User enters correct key
+    When User uploads encrypted file
+    When User enters correct decryption key
     Then User can decrypt file
 
   Scenario: User encrypts file with incorrect key
     Given User visits home page
     When Employee logs in
     When User selects encryption
-    When User enters incorrect key
+    When User uploads unencrypted file
+    When User enters incorrect encryption key
     Then User cannot encrypt file
 
   Scenario: Admin views admin-uploaded file

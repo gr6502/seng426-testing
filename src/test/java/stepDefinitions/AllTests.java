@@ -363,9 +363,9 @@ public class AllTests {
         Assert.assertEquals(prompt.getText(), "Upload New File with Max file size 50 MB");
     }
 
-    // When step: User enters correct key
-    @When("User enters correct key")
-    public void user_enters_correct_key() {
+    // When step: User uploads unencrypted file
+    @When("User uploads unencrypted file")
+    public void user_uploads_unencrypted_file() {
         WebElement fileUpload = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".p-ripple")));
         fileUpload.click();
 
@@ -373,20 +373,67 @@ public class AllTests {
         File uploadFile = new File("README.md");
         WebElement fileInput = driver.findElement(By.cssSelector("input[type=file]"));
         fileInput.sendKeys(uploadFile.getAbsolutePath());
+    }
 
+    // When step: User uploads encrypted file
+    @When("User uploads encrypted file")
+    public void user_uploads_encrypted_file() {
+        WebElement fileUpload = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".p-ripple")));
+        fileUpload.click();
+
+        // Example of file uploads found here: https://www.selenium.dev/documentation/webdriver/elements/file_upload/
+        File uploadFile = new File("encrypted-README-old.md");
+        WebElement fileInput = driver.findElement(By.cssSelector("input[type=file]"));
+        fileInput.sendKeys(uploadFile.getAbsolutePath());
+    }
+
+    // When step: User enters correct key
+    @When("User enters correct encryption key")
+    public void user_enters_correct_encryption_key() {
         // Encryption algorithm dropdown
         WebElement algDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.p-3:nth-child(2) > div:nth-child(1) > div:nth-child(1) > select:nth-child(2)")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", algDropdown);
         new Select(algDropdown).selectByValue("aes");
+
+        // Enter key
+        WebElement keyField = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.p-3:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > textarea:nth-child(1)")));
+        keyField.sendKeys(aesKey);
+    }
+
+    // When step: User enters correct key
+    @When("User enters correct decryption key")
+    public void user_enters_correct_decryption_key() {
+        // Encryption algorithm dropdown
+        WebElement algDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.row:nth-child(1) > div:nth-child(1) > select:nth-child(2)")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", algDropdown);
+        new Select(algDropdown).selectByValue("aes");
+
+        // Select manual
+        WebElement manual = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.row:nth-child(1) > div:nth-child(2) > select:nth-child(2)")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", manual);
+        new Select(manual).selectByValue("0");
+
+        // Enter key
+        WebElement keyField = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.p-3:nth-child(2) > div:nth-child(2) > div:nth-child(2) > textarea:nth-child(1)")));
+        keyField.sendKeys(aesKey);
+    }
+
+    // When step: User enters incorrect key
+    @When("User enters incorrect encryption key")
+    public void user_enters_incorrect_encryption_key() {
+        // Encryption algorithm dropdown
+        WebElement algDropdown = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.p-3:nth-child(2) > div:nth-child(1) > div:nth-child(1) > select:nth-child(2)")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", algDropdown);
+        new Select(algDropdown).selectByValue("aes");
+
+        // Enter key
+        WebElement keyField = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.p-3:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > textarea:nth-child(1)")));
+        keyField.sendKeys("INCORRECT KEY");
     }
 
     // Then step: User can encrypt file
     @Then("User can encrypt file")
     public void user_can_encrypt_file() {
-        // Enter key
-        WebElement keyField = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.p-3:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > textarea:nth-child(1)")));
-        keyField.sendKeys(aesKey);
-
         // Hit button
         WebElement encryptButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.p-3:nth-child(2) > div:nth-child(2) > button:nth-child(1)")));
         encryptButton.click();
@@ -394,5 +441,16 @@ public class AllTests {
         // Check file was encrypted
         WebElement encrypted = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.title")));
         Assert.assertEquals(encrypted.getText(), "Encrypted File");
+    }
+
+    // Then step: User cannot encrypt file
+    @Then("User cannot encrypt file")
+    public void user_cannot_encrypt_file() {
+        // Hit button
+        WebElement encryptButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.p-3:nth-child(2) > div:nth-child(2) > button:nth-child(1)")));
+        encryptButton.click();
+
+        // Check file was not encrypted by waiting for toast
+        WebElement messageToastCrossButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".p-toast-icon-close")));
     }
 }
