@@ -443,6 +443,22 @@ public class AllTests {
         Assert.assertEquals(encrypted.getText(), "Encrypted File");
     }
 
+    // Then step: User can decrypt file
+    @Then("User can decrypt file")
+    public void user_can_decrypt_file() {
+        // Hit button
+        WebElement decryptButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.text-right:nth-child(3) > button:nth-child(1)")));
+        decryptButton.click();
+
+        // Check file is decrypted
+        try {
+            WebElement messageToastCrossButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".p-toast-icon-close")));
+            Assert.assertTrue(false);  // Toast should NOT appear - this means it errored
+        } catch(Exception e) {
+            System.out.println("File decrypted");
+        }
+    }
+
     // Then step: User cannot encrypt file
     @Then("User cannot encrypt file")
     public void user_cannot_encrypt_file() {

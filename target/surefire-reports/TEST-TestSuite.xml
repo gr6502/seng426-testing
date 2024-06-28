@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="238.302" tests="12" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="207.55" tests="12" errors="0" skipped="0" failures="4">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-21.0.2.13-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Marcus\AppData\Local\Temp\surefire6835311334963197413\surefirebooter-20240627171549481_3.jar C:\Users\Marcus\AppData\Local\Temp\surefire6835311334963197413 2024-06-27T17-15-48_916-jvmRun1 surefire-20240627171549481_1tmp surefire_0-20240627171549481_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Marcus\AppData\Local\Temp\surefire3799292330856337182\surefirebooter-20240627173537075_3.jar C:\Users\Marcus\AppData\Local\Temp\surefire3799292330856337182 2024-06-27T17-35-36_756-jvmRun1 surefire-20240627173537075_1tmp surefire_0-20240627173537075_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Marcus\Desktop\SUMMER 2024\SENG 426\crypto-testing\target\test-classes;C:\Users\Marcus\Desktop\SUMMER 2024\SENG 426\crypto-testing\target\classes;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\Marcus\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\Marcus\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\Marcus\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\Marcus\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Marcus\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Marcus\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Marcus\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Marcus\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\Marcus\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\Marcus\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\Marcus\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\Marcus\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\Marcus\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\Marcus\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Marcus\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Marcus\.m2\repository\io\cucumber\cucumber-testng\7.18.0\cucumber-testng-7.18.0.jar;C:\Users\Marcus\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Marcus\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Marcus\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Marcus\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\Marcus\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\Marcus\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\Marcus\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\Marcus\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Marcus\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\Marcus\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\Marcus\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\Marcus\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\Marcus\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\Marcus\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\Marcus\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Marcus\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Marcus\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Marcus\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Marcus\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\Marcus\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\Marcus\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Marcus\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Marcus\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\Marcus\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\Marcus\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\Marcus\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\Marcus\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Marcus\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Marcus\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Marcus\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Marcus\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Marcus\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Marcus\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Marcus\AppData\Local\Temp\surefire6835311334963197413\surefirebooter-20240627171549481_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Marcus\AppData\Local\Temp\surefire3799292330856337182\surefirebooter-20240627173537075_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS"/>
@@ -61,34 +61,34 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Check that Sign Up Scenario works successfully&quot;, &quot;All Tests&quot;](1)" classname="cuccumbersOptions.TestNGRunner" time="21.089">
+  <testcase name="runScenario[&quot;Check that Sign Up Scenario works successfully&quot;, &quot;All Tests&quot;](1)" classname="cuccumbersOptions.TestNGRunner" time="12.671">
     <system-out><![CDATA[
 Scenario: Check that Sign Up Scenario works successfully                      # src/test/java/features/AllTests.feature:2
-17:15:55.346 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:15:56.322 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:15:56.324 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:15:56.325 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:15:56.380 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:15:56.388 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:35:41.307 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:35:42.071 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:35:42.073 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:35:42.075 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:35:42.124 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:35:42.126 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given User visits home page to sign up                                      # stepDefinitions.AllTests.user_visits_on_the_homepage()
   When User clicks on Sign Up Button                                          # stepDefinitions.AllTests.user_clicks_on_sign_up_button()
   When User inputs name, email, password, confirm password and selects a role # stepDefinitions.AllTests.user_inputs_name_email_password_and_confirm_password()
   When User clicks submit sign up button                                      # stepDefinitions.AllTests.user_clicks_submit_sign_up_button()
   Then User receives a sign up success message                                # stepDefinitions.AllTests.user_receives_a_sign_up_success_message()
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:15:59 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:35:44 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Admin approves a new user&quot;, &quot;All Tests&quot;](2)" classname="cuccumbersOptions.TestNGRunner" time="11.054">
+  <testcase name="runScenario[&quot;Admin approves a new user&quot;, &quot;All Tests&quot;](2)" classname="cuccumbersOptions.TestNGRunner" time="7.985">
     <system-out><![CDATA[
 Scenario: Admin approves a new user                           # src/test/java/features/AllTests.feature:9
-17:16:15.321 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:16:15.359 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:16:15.360 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:16:15.363 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:16:15.385 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:16:15.387 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:35:53.325 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:35:53.349 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:35:53.350 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:35:53.351 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:35:53.368 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:35:53.371 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given Admin visits home page to approve a user              # stepDefinitions.AllTests.admin_visits_home_page_to_approve_a_user()
   When Admin clicks on login button to approve a user         # stepDefinitions.AllTests.admin_clicks_on_login_button_to_approve_a_user()
   When Admin logins with email and password to approve a user # stepDefinitions.AllTests.admin_logins_with_email_and_password_to_approve_a_user()
@@ -101,70 +101,70 @@ System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.v
 Driver info: driver.version: unknown
   Then Admin approves the first new user                      # stepDefinitions.AllTests.admin_approves_the_new_user()
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:16:17 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:35:54 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User without account attempts to use encryption&quot;, &quot;All Tests&quot;](3)" classname="cuccumbersOptions.TestNGRunner" time="8.006">
+  <testcase name="runScenario[&quot;User without account attempts to use encryption&quot;, &quot;All Tests&quot;](3)" classname="cuccumbersOptions.TestNGRunner" time="3.008">
     <system-out><![CDATA[
 Scenario: User without account attempts to use encryption # src/test/java/features/AllTests.feature:17
-17:16:26.375 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:16:26.413 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:16:26.416 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:16:26.417 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:16:26.442 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:16:26.447 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:36:01.321 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:36:01.343 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:36:01.344 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:36:01.344 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:36:01.356 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:36:01.358 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given User visits home page                             # stepDefinitions.AllTests.user_visits_homepage()
   When User selects encryption                            # stepDefinitions.AllTests.user_selects_encryption()
   Then Login popup appears                                # stepDefinitions.AllTests.login_popup_appears()
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:16:28 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:36:02 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User without account attempts to use decryption&quot;, &quot;All Tests&quot;](4)" classname="cuccumbersOptions.TestNGRunner" time="4.991">
+  <testcase name="runScenario[&quot;User without account attempts to use decryption&quot;, &quot;All Tests&quot;](4)" classname="cuccumbersOptions.TestNGRunner" time="3.724">
     <system-out><![CDATA[
 Scenario: User without account attempts to use decryption # src/test/java/features/AllTests.feature:22
-17:16:34.379 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:16:34.406 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:16:34.423 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:16:34.424 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:16:34.455 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:16:34.456 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:36:04.323 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:36:04.346 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:36:04.348 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:36:04.348 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:36:04.364 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:36:04.365 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given User visits home page                             # stepDefinitions.AllTests.user_visits_homepage()
   When User selects decryption                            # stepDefinitions.AllTests.user_selects_decryption()
   Then Login popup appears                                # stepDefinitions.AllTests.login_popup_appears()
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:16:36 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:36:05 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User performs role change&quot;, &quot;All Tests&quot;](5)" classname="cuccumbersOptions.TestNGRunner" time="37.957">
+  <testcase name="runScenario[&quot;User performs role change&quot;, &quot;All Tests&quot;](5)" classname="cuccumbersOptions.TestNGRunner" time="34.851">
     <system-out><![CDATA[
 Scenario: User performs role change  # src/test/java/features/AllTests.feature:28
-17:16:39.370 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:16:39.393 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:16:39.394 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:16:39.394 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:16:39.410 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:16:39.411 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:36:08.055 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:36:08.072 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:36:08.074 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:36:08.074 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:36:08.086 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:36:08.087 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given User visits home page        # stepDefinitions.AllTests.user_visits_homepage()
   When Employee logs in              # stepDefinitions.AllTests.employee_logs_in()
 Admin module not present for user
   Then User cannot click admin panel # stepDefinitions.AllTests.user_cannot_click_admin_panel()
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:16:41 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:36:09 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Admin performs role change&quot;, &quot;All Tests&quot;](6)" classname="cuccumbersOptions.TestNGRunner" time="38.739">
-    <failure message="Expected condition failed: waiting for element to be clickable: By.cssSelector: #pr_id_5-table &gt; tbody:nth-child(2) &gt; tr:nth-child(3) &gt; td:nth-child(6) &gt; div:nth-child(1) &gt; button:nth-child(1) (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54350/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0ec0f7ca26086e16e5c2fa844990678b" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+  <testcase name="runScenario[&quot;Admin performs role change&quot;, &quot;All Tests&quot;](6)" classname="cuccumbersOptions.TestNGRunner" time="36.721">
+    <failure message="Expected condition failed: waiting for element to be clickable: By.cssSelector: #pr_id_5-table &gt; tbody:nth-child(2) &gt; tr:nth-child(3) &gt; td:nth-child(6) &gt; div:nth-child(1) &gt; button:nth-child(1) (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56327}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56327/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 818d58c1fc8c42ebac23bdca009ebe9a" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for element to be clickable: By.cssSelector: #pr_id_5-table > tbody:nth-child(2) > tr:nth-child(3) > td:nth-child(6) > div:nth-child(1) > button:nth-child(1) (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54350/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ec0f7ca26086e16e5c2fa844990678b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56327}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56327/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 818d58c1fc8c42ebac23bdca009ebe9a
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at stepDefinitions.AllTests.role_is_edited(AllTests.java:291)
@@ -172,12 +172,12 @@ Session ID: 0ec0f7ca26086e16e5c2fa844990678b
 ]]></failure>
     <system-out><![CDATA[
 Scenario: Admin performs role change     # src/test/java/features/AllTests.feature:33
-17:17:17.331 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:17:17.349 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:17:17.352 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:17:17.353 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:17:17.361 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:17:17.362 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:36:42.945 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:36:42.963 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:36:42.964 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:36:42.964 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:36:42.976 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:36:42.977 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given Admin visits home page to log in # stepDefinitions.AllTests.admin_visits_on_the_homepage()
   When Admin logs in                     # stepDefinitions.AllTests.admin_logs_in()
   When Admin goes to edit role           # stepDefinitions.AllTests.admin_goes_to_edit_role()
@@ -186,135 +186,150 @@ Scenario: Admin performs role change     # src/test/java/features/AllTests.featu
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54350/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0ec0f7ca26086e16e5c2fa844990678b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56327}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56327/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 818d58c1fc8c42ebac23bdca009ebe9a
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at stepDefinitions.AllTests.role_is_edited(AllTests.java:291)
 	at ✽.Role is edited(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:37)
 
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:17:18 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:36:44 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User views admin-uploaded file&quot;, &quot;All Tests&quot;](7)" classname="cuccumbersOptions.TestNGRunner" time="36.696">
+  <testcase name="runScenario[&quot;User views admin-uploaded file&quot;, &quot;All Tests&quot;](7)" classname="cuccumbersOptions.TestNGRunner" time="35.789">
     <system-out><![CDATA[
 Scenario: User views admin-uploaded file # src/test/java/features/AllTests.feature:39
-17:17:56.066 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:17:56.086 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:17:56.087 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:17:56.087 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:17:56.106 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:17:56.107 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:37:19.623 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:37:19.640 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:37:19.641 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:37:19.641 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:37:19.656 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:37:19.657 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given User visits home page            # stepDefinitions.AllTests.user_visits_homepage()
   When User logs in                      # stepDefinitions.AllTests.user_logs_in()
 Admin module not present for user
   Then User cannot click admin panel     # stepDefinitions.AllTests.user_cannot_click_admin_panel()
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:17:57 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:37:20 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User encrypts file&quot;, &quot;All Tests&quot;](8)" classname="cuccumbersOptions.TestNGRunner" time="13.189">
+  <testcase name="runScenario[&quot;User encrypts file&quot;, &quot;All Tests&quot;](8)" classname="cuccumbersOptions.TestNGRunner" time="11.594">
+    <failure message="element click intercepted: Element &lt;button type=&quot;button&quot; pripple=&quot;&quot; class=&quot;p-ripple p-element p-toast-icon-close p-link ng-tns-c53-2 ng-star-inserted&quot; style=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1305, 52). Other element would receive the click: &lt;div _ngcontent-wia-c55=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c55-3 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=126.0.6478.127)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [02aab4c46256171730c63307a4ab9897, clickElement {id=f.DEF0939894303963A3CB59B37B8314C1.d.3A94E614565E2987FD32D0043CE3482A.e.85}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56498/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (02aab4c46256171730c63307a4ab9897)] -&gt; css selector: .p-ripple]&#10;Session ID: 02aab4c46256171730c63307a4ab9897" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button type="button" pripple="" class="p-ripple p-element p-toast-icon-close p-link ng-tns-c53-2 ng-star-inserted" style="">...</button> is not clickable at point (1305, 52). Other element would receive the click: <div _ngcontent-wia-c55="" class="ngx-spinner-overlay ng-tns-c55-3 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [02aab4c46256171730c63307a4ab9897, clickElement {id=f.DEF0939894303963A3CB59B37B8314C1.d.3A94E614565E2987FD32D0043CE3482A.e.85}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56498/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (02aab4c46256171730c63307a4ab9897)] -> css selector: .p-ripple]
+Session ID: 02aab4c46256171730c63307a4ab9897
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefinitions.AllTests.user_uploads_unencrypted_file(AllTests.java:370)
+	at ✽.User uploads unencrypted file(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:48)
+]]></failure>
     <system-out><![CDATA[
 Scenario: User encrypts file              # src/test/java/features/AllTests.feature:44
-17:18:32.763 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:18:32.778 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:18:32.780 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:18:32.780 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:18:32.793 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:18:32.794 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:37:55.413 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:37:55.428 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:37:55.430 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:37:55.430 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:37:55.440 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:37:55.442 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given User visits home page             # stepDefinitions.AllTests.user_visits_homepage()
   When Employee logs in                   # stepDefinitions.AllTests.employee_logs_in()
   When User selects encryption            # stepDefinitions.AllTests.user_selects_encryption()
   When User uploads unencrypted file      # stepDefinitions.AllTests.user_uploads_unencrypted_file()
+      org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" pripple="" class="p-ripple p-element p-toast-icon-close p-link ng-tns-c53-2 ng-star-inserted" style="">...</button> is not clickable at point (1305, 52). Other element would receive the click: <div _ngcontent-wia-c55="" class="ngx-spinner-overlay ng-tns-c55-3 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [02aab4c46256171730c63307a4ab9897, clickElement {id=f.DEF0939894303963A3CB59B37B8314C1.d.3A94E614565E2987FD32D0043CE3482A.e.85}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56498/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (02aab4c46256171730c63307a4ab9897)] -> css selector: .p-ripple]
+Session ID: 02aab4c46256171730c63307a4ab9897
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefinitions.AllTests.user_uploads_unencrypted_file(AllTests.java:370)
+	at ✽.User uploads unencrypted file(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:48)
+
   When User enters correct encryption key # stepDefinitions.AllTests.user_enters_correct_encryption_key()
   Then User can encrypt file              # stepDefinitions.AllTests.user_can_encrypt_file()
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:18:34 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:37:56 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User decrypts file&quot;, &quot;All Tests&quot;](9)" classname="cuccumbersOptions.TestNGRunner" time="8.902">
-    <failure message="The step &apos;User can decrypt file&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@Then(&quot;User can decrypt file&quot;)&#10;public void user_can_decrypt_file() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.testng.UndefinedStepException"><![CDATA[io.cucumber.testng.UndefinedStepException: 
-The step 'User can decrypt file' is undefined.
-You can implement this step using the snippet(s) below:
-
-@Then("User can decrypt file")
-public void user_can_decrypt_file() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+  <testcase name="runScenario[&quot;User decrypts file&quot;, &quot;All Tests&quot;](9)" classname="cuccumbersOptions.TestNGRunner" time="8.636">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinitions.AllTests.user_can_decrypt_file(AllTests.java:456)
+	at ✽.User can decrypt file(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:58)
 ]]></failure>
     <system-out><![CDATA[
 Scenario: User decrypts file              # src/test/java/features/AllTests.feature:52
-17:18:46.030 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:18:46.047 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:18:46.048 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:18:46.048 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:18:46.060 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:18:46.061 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:38:07.007 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:38:07.022 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:38:07.023 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:38:07.023 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:38:07.032 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:38:07.032 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given User visits home page             # stepDefinitions.AllTests.user_visits_homepage()
   When Employee logs in                   # stepDefinitions.AllTests.employee_logs_in()
   When User selects decryption            # stepDefinitions.AllTests.user_selects_decryption()
   When User uploads encrypted file        # stepDefinitions.AllTests.user_uploads_encrypted_file()
   When User enters correct decryption key # stepDefinitions.AllTests.user_enters_correct_decryption_key()
-  Then User can decrypt file
+  Then User can decrypt file              # stepDefinitions.AllTests.user_can_decrypt_file()
+      java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefinitions.AllTests.user_can_decrypt_file(AllTests.java:456)
+	at ✽.User can decrypt file(file:///C:/Users/Marcus/Desktop/SUMMER%202024/SENG%20426/crypto-testing/src/test/java/features/AllTests.feature:58)
+
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:18:47 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:38:08 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User encrypts file with incorrect key&quot;, &quot;All Tests&quot;](10)" classname="cuccumbersOptions.TestNGRunner" time="9.176">
+  <testcase name="runScenario[&quot;User encrypts file with incorrect key&quot;, &quot;All Tests&quot;](10)" classname="cuccumbersOptions.TestNGRunner" time="8.129">
     <system-out><![CDATA[
 Scenario: User encrypts file with incorrect key # src/test/java/features/AllTests.feature:60
-17:18:54.873 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:18:54.924 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:18:54.925 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:18:54.926 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:18:54.961 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:18:54.969 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:38:15.647 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:38:15.661 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:38:15.662 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:38:15.662 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:38:15.669 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:38:15.670 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given User visits home page                   # stepDefinitions.AllTests.user_visits_homepage()
   When Employee logs in                         # stepDefinitions.AllTests.employee_logs_in()
   When User selects encryption                  # stepDefinitions.AllTests.user_selects_encryption()
@@ -322,36 +337,36 @@ Scenario: User encrypts file with incorrect key # src/test/java/features/AllTest
   When User enters incorrect encryption key     # stepDefinitions.AllTests.user_enters_incorrect_encryption_key()
   Then User cannot encrypt file                 # stepDefinitions.AllTests.user_cannot_encrypt_file()
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:18:57 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:38:17 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Admin views admin-uploaded file&quot;, &quot;All Tests&quot;](11)" classname="cuccumbersOptions.TestNGRunner" time="7.868">
+  <testcase name="runScenario[&quot;Admin views admin-uploaded file&quot;, &quot;All Tests&quot;](11)" classname="cuccumbersOptions.TestNGRunner" time="6.298">
     <system-out><![CDATA[
 Scenario: Admin views admin-uploaded file    # src/test/java/features/AllTests.feature:68
-17:19:04.091 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:19:04.106 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:19:04.107 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:19:04.107 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:19:04.124 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:19:04.126 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:38:23.776 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:38:23.800 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:38:23.802 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:38:23.802 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:38:23.813 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:38:23.814 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given Admin visits home page to log in     # stepDefinitions.AllTests.admin_visits_on_the_homepage()
   When Admin logs in                         # stepDefinitions.AllTests.admin_logs_in()
   When Admin panel Resources tab is selected # stepDefinitions.AllTests.admin_panel_resources_tab_is_selected()
   Then Admin-uploaded files are visible      # stepDefinitions.AllTests.admin_uploaded_files_are_visible()
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:19:05 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:38:25 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Employee views admin-uploaded file&quot;, &quot;All Tests&quot;](12)" classname="cuccumbersOptions.TestNGRunner" time="36.873">
-    <failure message="Expected condition failed: waiting for element to be clickable: By.cssSelector: div #collapsibleNavId ul li:nth-child(8) a (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55086}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55086/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a14a670562cd7523014c429e1a61066f" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+  <testcase name="runScenario[&quot;Employee views admin-uploaded file&quot;, &quot;All Tests&quot;](12)" classname="cuccumbersOptions.TestNGRunner" time="35.427">
+    <failure message="Expected condition failed: waiting for element to be clickable: By.cssSelector: div #collapsibleNavId ul li:nth-child(8) a (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56622}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56622/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0d506b4ae8390216eabe93e9e396a122" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for element to be clickable: By.cssSelector: div #collapsibleNavId ul li:nth-child(8) a (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55086}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55086/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a14a670562cd7523014c429e1a61066f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56622}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56622/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d506b4ae8390216eabe93e9e396a122
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at stepDefinitions.AllTests.admin_panel_resources_tab_is_selected(AllTests.java:351)
@@ -359,12 +374,12 @@ Session ID: a14a670562cd7523014c429e1a61066f
 ]]></failure>
     <system-out><![CDATA[
 Scenario: Employee views admin-uploaded file # src/test/java/features/AllTests.feature:74
-17:19:11.953 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
-17:19:11.971 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
-17:19:11.972 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
-17:19:11.972 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
-17:19:11.984 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
-17:19:11.987 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+17:38:30.075 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Using WebDriverManager 5.8.0
+17:38:30.096 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome=126 in cache (valid until 17:47:12 27/06/2024 PDT)
+17:38:30.097 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache -- Resolution chrome126=126.0.6478.126 in cache (valid until 16:25:31 28/06/2024 PDT)
+17:38:30.097 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+17:38:30.106 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager -- Driver chromedriver 126.0.6478.126 found in cache
+17:38:30.107 [main] INFO io.github.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\Marcus\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
   Given User visits home page                # stepDefinitions.AllTests.user_visits_homepage()
   When Employee logs in                      # stepDefinitions.AllTests.employee_logs_in()
   When Admin panel Resources tab is selected # stepDefinitions.AllTests.admin_panel_resources_tab_is_selected()
@@ -372,8 +387,8 @@ Scenario: Employee views admin-uploaded file # src/test/java/features/AllTests.f
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55086}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55086/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a14a670562cd7523014c429e1a61066f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Marcus\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56622}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56622/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d506b4ae8390216eabe93e9e396a122
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at stepDefinitions.AllTests.admin_panel_resources_tab_is_selected(AllTests.java:351)
@@ -381,7 +396,7 @@ Session ID: a14a670562cd7523014c429e1a61066f
 
   Then Admin-uploaded files are visible      # stepDefinitions.AllTests.admin_uploaded_files_are_visible()
 ]]></system-out>
-    <system-err><![CDATA[Jun 27, 2024 5:19:13 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 27, 2024 5:38:31 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
 ]]></system-err>
   </testcase>

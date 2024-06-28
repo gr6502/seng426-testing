@@ -11,5 +11,4 @@ before testing, to reset the database and ensure tests execute properly.
 
 TODO:
 Add tests for the following:
-3. File Encryption and Decryption
 5. Testing Bug that You have fix and the Proposed Functionality/Feature (in Task II)
